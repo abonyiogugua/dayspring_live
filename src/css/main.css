@@ -1,0 +1,1047 @@
+ 
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --hover-color:rgb(233, 181, 181);
+    --secondary-color:rgb(12, 12, 75);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*==========theme mode========================*/
+
+body {
+    background-color: #c5b8b8;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.3s ease;
+  }
+  
+ 
+  
+  #theme-toggle {
+    background-color: red;
+    box-shadow: 3px 3px 4px gray;
+    border-radius: 50px;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    &:hover{
+        background-color: var(--hover-color);
+        scale: 1.1;
+        transition: 2s;
+    }  
+}
+  
+  /* Dark mode */
+  body.dark-mode {
+    background-color:black;
+    color: #fff;
+    text-shadow: 3px 3px 4px black;
+  }
+   
+  #light1{
+    display: none;
+  }
+
+/*==========theme mode end========================*/
+
+
+
+/*==========background svg ========================*/
+
+.home_svg_bg{
+    position: fixed;
+    top: 40px;
+    left: 150px;
+    z-index: -10;
+    opacity: 0.5;
+}
+
+/*==========background svg animations ========================*/
+.home_bg2 img{
+    width:500px;
+    height:500px;
+    position: fixed;
+    top: 160px;
+    left: 390px;
+    z-index: -10;
+    opacity: 0.5;
+    animation: scaling 10s linear infinite;
+}
+@keyframes scaling{
+    50%{scale: 1.3;}
+}
+
+#Circle1{
+    filter: drop-shadow(10px 6px 4px black);
+    animation: ball1 10s linear infinite;
+}
+#Circle2{
+    animation: ball1 10s linear infinite;
+    filter: drop-shadow(10px 6px 4px black);
+}
+#Oval1{
+    animation: ball1 10s linear infinite;
+    filter: drop-shadow(10px 6px 4px black);
+}
+@keyframes ball1{
+    60%{transform: translateY(20px);}
+    40%{transform: translateX(-30px);}
+}
+
+#Circle3{
+    animation: ball2 10s linear infinite;
+    filter: drop-shadow(10px 6px 4px black);
+}
+@keyframes ball2{
+    60%{transform: translateX(50px);}
+    40%{transform: translateY(-20px);}
+}
+
+#Circle4{
+    animation: ball3 10s linear infinite;
+    filter: drop-shadow(10px 6px 4px black);
+}
+@keyframes ball3{
+    40%{transform: translateX(30px);}
+    20%{transform: translateY(-40px);}
+}
+
+#Circle5{
+    animation: ball4 10s linear infinite;
+    filter: drop-shadow(10px 6px 4px black);
+}
+@keyframes ball4{
+    30%{transform: translateY(-60px);}
+    10%{transform: translateX(-40px);}
+}
+
+#Oval2{
+    animation: ovral2 10s linear infinite;
+    filter: drop-shadow(10px 6px 4px black);
+}
+@keyframes ovral2{
+    40%{transform: translateY(-30px);}
+    10%{transform: translateX(20px);}
+}
+
+#Circle6{
+    animation: ball5 10s linear infinite;
+    filter: drop-shadow(10px 6px 4px black);
+}
+@keyframes ball5{
+    30%{transform: translateY(-10px);}
+    10%{transform: translateX(20px);}
+}
+
+#Line1{
+    filter: drop-shadow(10px 6px 4px black);
+    animation: line1 20s linear infinite;
+}
+@keyframes line1{
+    40%{transform: translateY(-10px);}
+    10%{transform: translateY(5px);}
+}
+#Line2{
+    filter: drop-shadow(10px 6px 4px black);
+    animation: line2 20s linear infinite;
+}
+@keyframes line2{
+    50%{transform: translateX(-30px);}
+    30%{transform: translateY(40px);}
+}
+
+#Line3{
+    filter: drop-shadow(10px 6px 4px black);
+    animation: line3 20s linear infinite;
+}
+@keyframes line3{
+    50%{transform: translateY(30px);}
+    30%{transform: translateY(50px);}
+}
+
+#Line5{
+    filter: drop-shadow(10px 6px 4px black);
+    animation: line5 20s linear infinite;
+}
+@keyframes line5{
+    30%{transform: translateY(240px);}
+    15%{transform: translateY(40px);}
+}
+/*==========background svg animations end========================*/
+/*==========background svg end========================*/
+
+
+/*==========home section ========================*/
+/*==========main banner========================*/
+
+.home_section_banner1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px gray;
+    padding: 10px;
+}
+
+@keyframes rot1{
+    50%{transform: rotateY(40deg);}
+}
+
+.home_section_banner1 img{
+    width: 300px;
+    height: 200px;
+    animation: rot1 3s linear infinite;
+    filter: drop-shadow(3px 3px 4px white);
+}
+
+.home_section_banner1 svg{
+    fill: white;
+    width: 20px;
+    height: 20px;
+    &:hover{
+        fill: black;
+        transition: 2s;
+    }
+}
+.home_section_banner1 button{
+    background-color: red;
+    padding: 5px;
+    color: white;
+    font-size: larger;
+    border-radius: 10px;
+    text-shadow: 2px 2px 3px black;
+    border: none;
+    box-shadow: 3px 3px 4px gray;
+    &:hover{
+        background-color: var(--hover-color);
+        transition: 2s;
+        scale: 1.2;
+        color: black;
+    }
+}
+.home_section_banner1 a{
+    text-decoration: none;
+}
+.home_section_banner1{
+    margin-top: 50px;
+    text-align: center;
+}
+.home_section_banner1 h2{
+  font-size: 2rem;
+  color: white;
+  -webkit-text-stroke-color: var(--secondary-color);
+    -webkit-text-stroke-width: 2px;
+  font-weight: bold;
+  text-shadow: 3px 3px 4px black;
+}
+/*==========main banner end========================*/
+
+/*==========sub menu========================*/
+.sub_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top:50px ;
+}
+.sub_menu svg{
+    fill: white;
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(2px 2px 3px black);
+}
+.sub_menu a{
+ text-decoration: none;
+ color: white;
+ text-shadow: 1px 2px 2px black;
+}
+.sub_menu1{
+    border-radius: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    padding: 20px;
+    border: 2px solid var(--secondary-color);
+    text-align: center;
+    box-shadow: 3px 3px 4px gray;
+    &:hover{
+        background-color: var(--hover-color);
+        transition: 2s;
+        scale: 1.2;
+    }
+    }
+/*==========sub menu end========================*/
+
+/*==========marquee========================*/
+.home_marquee svg{
+    width: 40px;
+    height: 40px;
+    fill: white;
+    filter: drop-shadow(2px 2px 3px black);
+}
+.home_marquee{
+    margin-top: 30px;
+ background-color: transparent;
+    backdrop-filter: blur(40px);
+    box-shadow: 3px 3px 4px gray;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+    -webkit-text-stroke-color: var(--secondary-color);
+    -webkit-text-stroke-width: 2px;
+}
+.home_marquee h1{   font-size: 3rem; 
+color: white;text-shadow: 3px 3px 4px black;}
+
+/*==========marquee end========================*/
+/*==========home section end========================*/
+
+.home_menu{
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.home_menu_title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 300px;
+    
+}
+.home_menu_title svg{
+    width: 30px;
+    height: 20px;
+    fill: white;
+}
+.home_menu_title button{
+    background-color: red;
+    border: none;
+    box-shadow: 3px 3px 4px gray;
+    padding: 10px;
+    border-radius: 10px;
+    &:hover{
+        background-color: var(--hover-color);
+        transition: 2s;
+        scale: 1.2;
+    }
+}
+.home_menu_title a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 4px black;
+}
+.home_title1 h3{
+    font-size: 2rem;
+    color: red;
+    text-shadow: 3px 3px 4px black;
+}#live_stream_section{
+    display: none;
+}
+.live_stream_tag img{
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(3px 3px 4px white);
+    &:hover{
+        animation: rot1 3s linear infinite;
+    }
+}
+.live_stream_tag{
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 200px;
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    box-shadow: 3px 3px 4px gray;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    &:hover{
+        background-color: var(--hover-color);
+        transition: 2s;
+    }
+}
+.live_stream_tag h2{
+    font-size: 2rem;
+    position: relative;
+    top: 70px;
+    
+}
+/*==========live section page end========================*/
+.live_stream_conts{
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    text-align: center;
+    gap: 80px;
+    margin-bottom: 100px;
+}
+.live_stream_cont1 img{
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px black;
+   width: 500px;
+    height: 300px;
+    &:hover{
+    scale: 1.1;
+    transition: 2s;
+}
+}
+.live_stream_cont1 h3{
+    position: relative;
+    color: red;
+    text-shadow: 3px 3px 4px black;
+    font-size: 1.3rem;
+    bottom: 80px;
+}
+.live_head h1{ 
+    font-size: 3rem;
+    text-align: center;
+    color: red;
+    margin-top: 60px;
+    text-shadow: 3px 3px 4px black;
+}
+.live_cnt2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+}
+.live_colons{
+margin-bottom: 100px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+a{
+    text-decoration: none;
+}
+.live_cnt2 h3{
+    position: relative;
+    bottom: 80px;
+    left: 80px;
+    font-size: 2rem;
+    color: red;
+    text-shadow: 3px 3px 4px black;
+}
+.live_col1{
+    position: relative;
+    bottom: 70px;
+    background-color: white;
+    box-shadow: 3px 3px 4px gray;
+    border-radius: 10px;
+    &:hover{
+        scale: 1.1;
+        transition: 2s;
+        background-color: var(--hover-color);
+    }
+}
+.live_col2{
+    background-color: white;
+    box-shadow: 3px 3px 4px black;
+    border-radius: 10px;
+    &:hover{
+        scale: 1.1;
+        transition: 2s;
+        background-color: var(--hover-color);
+    }
+}
+
+.live_cnt2 img{
+    width: 400px;
+    height: 300px;
+}
+/*==========live section page========================*/
+
+
+
+/*==========profile section page========================*/
+#profile_page{
+    display: none;
+}
+.profile-display img{
+    border-radius: 50px;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 3px 3px 4px black;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    display: block;
+}
+.profile-section img{
+    max-width: 150px;
+    padding: 5px;
+    margin-top: 10px;
+    display: block;
+}
+.profile-display{
+    position: absolute;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 3px 3px 4px gray;
+    border: 2px solid var(--secondary-color);
+    align-items: center;
+    gap: 10px;
+    right: 2px;
+    top: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+ 
+}
+/*==========profile edit section page ========================*/
+
+.profile-section{
+    text-align: center;
+}
+#profile_page h1{
+    text-align: center;
+    font-size: 4rem;
+    color: red;
+    text-shadow: 3px 3px 4px black;
+}
+#form1 input{
+   box-shadow: 3px 3px 4px black;
+    border-radius: 10px;
+    padding: 5px;
+    width: 400px;  
+}
+
+#submit1{
+    box-shadow: 3px 3px 4px gray;
+    padding: 5px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    &:hover{
+        background-color: var(--hover-color);
+        transition: 2s;
+        scale: 1.1;
+    }
+}
+
+#save_btn{
+    box-shadow: 3px 3px 4px gray;
+    padding: 5px;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: red;
+    &:hover{
+        background-color: var(--hover-color);
+        transition: 2s;
+        scale: 1.1;
+    }
+}
+
+#profile_page form{
+   border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    box-shadow: 3px 3px 4px gray;
+  }
+.profile-section input{
+    box-shadow: 3px 3px 4px black;
+    border-radius: 10px;
+    padding: 5px;
+    width: 400px;
+}
+label{
+    color: red;
+    text-shadow: 3px 3px 4px black;
+}
+
+#imageUpload{
+    padding: 10px;
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    box-shadow: 3px 3px 4px gray;
+}
+
+/*==========profile edit section page end========================*/
+
+/*==========profile section page end========================*/
+
+.active1{
+  fill: red;
+}
+
+/*==========page effects========================*/
+
+.effect1{
+animation: effect2 1s ease-in-out forwards;
+}
+@keyframes effect2{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+/*==========page effects end========================*/
+
+
+/*==========settings effect========================*/
+.set1{
+animation: moveback 1s ease;
+}
+@keyframes moveback{
+    5%{transform: translateX(-5px);}
+    0%{transform: translateX(0px);}
+}
+
+/*==========settings effect end========================*/
+
+/*==========commandment section========================*/
+#commandment_page{
+    display: none;
+}
+#commandment_page h2{
+color: red;
+text-shadow: 3px 3px 4px black;
+}
+.command_btn{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.command_btn a{
+    color: white;
+    font-size: 1.1rem;
+}
+.command_btn button{
+background-color: red;
+border-radius: 10px;
+padding: 10px;
+border: none;
+box-shadow: 3px 3px 4px gray;
+}
+#command_igbo{
+ background-color: transparent;
+    backdrop-filter: blur(100px);
+    text-align: center;
+    display: none;
+}
+#command_english p{
+  background-color: transparent;
+    backdrop-filter: blur(100px);
+    padding: 2px;
+    font-size: larger;
+    margin-top: 20px;
+    font-family: fantasy;
+    margin-bottom: 100px;
+   }
+
+#command_english{
+    background-color: transparent;
+     backdrop-filter: blur(100px);
+text-align: center;
+}
+
+#command_igbo p{
+        background-color: transparent;
+    backdrop-filter: blur(100px);
+         padding: 2px;
+    font-size: x-large;
+    margin-top: 20px;
+    margin-bottom: 100px;
+ }
+
+/*==========commandment section end========================*/
+
+
+
+/*==========about section========================*/
+#about_page{
+    display: none;
+    text-align: center;
+    margin-top: 100px;
+}
+#about_page h1{
+color: red;
+text-shadow: 3px 3px 4px black;
+font-size: xx-large;
+}
+#about_page p{
+    font-size: larger;
+}
+/*==========about section end========================*/
+
+
+/*==========contact section========================*/
+#contact_page{
+    display: none;
+    text-align: center;
+}
+#contact_page svg{
+    width: 40px;
+    filter: drop-shadow(3px 3px 4px black);
+    height: 40px;
+    &:hover{
+    fill: var(--hover-color);
+    transition: 2s;
+    }
+}
+#contact_page h1{
+margin-top: 100px;
+    color: red;
+    font-size: x-large;
+    text-shadow: 1px 1px 2px gray;
+}
+
+#contact_page li{
+margin-top: 50px;
+list-style: none;
+}
+
+
+/*==========contact section end========================*/
+
+
+/*==========settings section page ========================*/
+
+#settings_section_page{
+  background-color: transparent;
+    backdrop-filter: blur(40px);
+ position: fixed;
+ top: 220px;
+ padding: 20px;
+ display: none;
+ right: 280px;
+ border: 2px solid var(--secondary-color);
+ box-shadow: 3px 3px 4px gray;
+ border-radius: 10px;
+ z-index: 3;
+}
+#close_settings{
+    text-align: right;
+}
+#settings_section_page li{
+list-style: none;
+font-size: larger;
+color: white;
+margin: 15px;
+text-shadow: 3px 3px 4px black;
+}
+#settings_section_page svg{
+    filter: drop-shadow(2px 2px 3px black);
+    width: 30px;
+    height: 30px;
+    fill: white;
+    &:hover{
+        fill: var(--hover-color);
+        scale: 1.2;
+        transition: 2s;
+    }
+}
+.container{
+    color: white;
+}
+/*==========settings section page end========================*/
+
+
+/*==========menu footer section ========================*/
+footer{
+      background-color: var(--secondary-color);
+    padding: 10px;
+    border-top-left-radius:  10rem ;
+    border-top: 3px solid var(--secondary-color);
+    box-shadow: 3px 3px 4px gray;
+    border-top-right-radius: 10rem;
+    position: fixed;
+    width: 800px;
+    bottom: 0px;
+    z-index: 10;
+    left: 300px;
+}
+
+footer svg{
+width: 30px;
+fill: white;
+height: 30px;
+filter: drop-shadow(3px 3px 4px black);
+&:hover{
+     fill: red;
+     scale: 1.1;
+    transition: 2s;
+}
+&:active{
+ fill: black;
+}
+}
+.navs1{
+    background-color: skyblue;
+    border-radius: 50px;
+    border: 3px solid var(--secondary-color);
+    box-shadow: 3px 3px 4px black;
+    position: relative;
+    bottom: 35px;
+    &:active{
+        background-color: red;
+    }
+}
+.navs1 svg{
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    &:active{
+        fill: black;
+    }
+}
+nav{
+display: flex;
+justify-content: center;
+text-align: center;
+gap: 200px;
+}
+  /*==========menu footer section end========================*/
+
+  /* ---------------------- Responsive Media Queries ---------------------- */
+
+    /* Tablets and smaller laptops (2 cards per row) */
+    @media (max-width: 1024px) {
+        
+      }
+  
+
+/* big screen Mobile phones (1 card per row) */
+@media (max-width: 968px) {
+         
+
+
+}
+      /* Mobile phones (1 card per row) */
+      @media (max-width: 768px) {
+          /*==========background svg ========================*/
+
+.home_svg_bg{
+    top: 40px;
+  left: 1px;
+ 
+}
+.home_bg2 img{
+  top: 160px;
+  left: 40px;
+  width: 300px;
+  height: 300px;
+ 
+}
+
+/*==========background svg end========================*/
+
+/*==========main banner========================*/
+.home_section_banner1 img{
+  width: 200px;
+  height: 200px;
+}
+/*==========main banner end========================*/
+/*==========sub menu========================*/
+.sub_menu{
+    gap: 20px;
+}
+.sub_menu svg{
+    width: 35px;
+    height: 35px;
+}
+.sub_menu a{
+    font-size: large;
+ }
+.sub_menu1{
+    border-radius: 20px;
+    padding: 10px;
+}
+/*==========sub menu end========================*/
+/*==========marquee========================*/
+.home_marquee{
+    border-radius: 10px;
+    height: 70px;
+    text-align: center;
+}
+/*==========marquee end========================*/
+
+
+
+/*==========home menu ========================*/
+.home_menu_title{
+    gap: 50px;
+    
+}
+.live_stream_tag img{
+    width: 150px;
+    height: 120px;
+    filter: drop-shadow(3px 3px 4px white);
+}
+.live_stream_tag{
+    gap: 60px;
+}
+.live_stream_tag h2{
+    font-size: 1.5rem;
+    top: 50px;
+}
+.home_menu_title button{
+    padding: 7px;
+    border-radius: 10px;
+    &:hover{
+        scale: 1.1;
+    }
+}
+
+
+/*==========home menu end========================*/
+
+
+
+/*==========live stream section========================*/
+#live_stream_section{
+    display: none;
+}
+/*==========live stream section end========================*/
+
+#settings_section_page{
+    top: 270px;
+    right: 30px;
+   }
+   
+/*==========live section page end========================*/
+.live_stream_conts{
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.live_stream_cont1 img{
+  margin: 10px;
+width: 150px;
+height: 180px;
+}
+.live_stream_cont1 h3{
+    position: relative;
+    color: red;
+    text-shadow: 3px 3px 4px black;
+    font-size: 1.3rem;
+    bottom: 80px;
+}
+.live_head h1{ 
+    font-size: 1.4rem;
+    text-align: center;
+    color:red;
+    text-shadow: 3px 3px 4px black;
+}
+
+.live_cnt2{
+    gap: 20px;
+    margin-top: 10px;
+}
+.live_cnt2 h3{
+    bottom: 30px;
+    left: 15px;
+    font-size: x-large;
+}
+.live_cnt2 img{
+    width: 150px;
+    height: 150px;
+}
+.live_colons{
+    margin-top: 10px;
+}
+
+/*==========live section page========================*/
+
+
+/*==========profile edit section page ========================*/
+
+#profile_page h1{
+    margin-top: 50px;
+    font-size: 2rem;
+}
+#form1 input{
+   box-shadow: 3px 3px 4px black;
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;  
+    height: 40px;
+}
+#submit1{
+font-size: 1.3rem;
+}
+
+#save_btn{
+font-size: 1.3rem;
+}
+
+.profile-section input{
+    width: 300px;  
+    height: 40px;
+}
+label{
+font-size: 2rem;
+}
+
+
+/*==========profile edit section page end========================*/
+
+
+
+/*==========settings page========================*/
+#settings_section_page{
+ top: 350px;
+  right: 0px;
+  padding: 30px;
+}
+/*==========settings page end========================*/
+
+
+
+
+/*==========footer========================*/
+footer{
+height: 40px; 
+width: 300px;
+    bottom: 0px;
+    left: 30px;
+}
+nav{
+    gap: 30px;
+}
+footer svg{
+    width: 40px;
+    height: 40px;    
+}    
+    .navs1 svg{
+        width: 60px;
+        height: 50px;
+        }
+/*==========footer nav end========================*/
+
+
+
+
+
+
+
+
+
+    }
+  
+      /* Large TV screens or monitors */
+      @media (min-width: 1600px) {
+        
+      }
+  
+/*==========main banner end========================*/
