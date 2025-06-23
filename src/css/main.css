@@ -882,6 +882,9 @@
      text-align: right;
  }
 
+  #settings_section_page a{
+   color: white; 
+  }
  #settings_section_page li {
      list-style: none;
      font-size: larger;
