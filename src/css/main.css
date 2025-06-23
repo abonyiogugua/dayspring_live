@@ -456,10 +456,8 @@
 
  .live_stream_tag {
      margin-top: 30px;
-     display: flex;
      text-align: center;
      justify-content: center;
-     gap: 200px;
      border: 2px solid var(--secondary-color);
      background-color: transparent;
      backdrop-filter: blur(40px);
@@ -473,12 +471,6 @@
      }
  }
 
- .live_stream_tag h2 {
-     font-size: 2rem;
-     position: relative;
-     top: 70px;
-
- }
 
  /*==========live section page end========================*/
  .live_stream_conts {
@@ -539,6 +531,7 @@
  .live_cnt2 h3 {
      position: relative;
      bottom: 80px;
+     display: none;
      left: 80px;
      font-size: 2rem;
      color: red;
@@ -572,6 +565,7 @@
  }
 
  .live_cnt2 img {
+    padding: 30px;
      width: 400px;
      height: 300px;
  }
@@ -920,16 +914,26 @@
  footer {
      background-color: var(--secondary-color);
      padding: 10px;
-     border-top-left-radius: 10rem;
+     border-top-left-radius: 10px;
      border-top: 3px solid var(--secondary-color);
      box-shadow: 3px 3px 4px gray;
-     border-top-right-radius: 10rem;
+     border-top-right-radius: 10px;
      position: fixed;
-     width: 800px;
+     width: 1000px;
      bottom: 0px;
      z-index: 10;
-     left: 300px;
+     left: 200px;
  }
+  .navs p{
+        color: white;
+        text-decoration: none;
+     }
+     .navs a{
+        color: white;
+        text-decoration: none;
+    
+     }
+     
 
  footer svg {
      width: 30px;
@@ -975,7 +979,7 @@
      display: flex;
      justify-content: center;
      text-align: center;
-     gap: 200px;
+     gap: 100px;
  }
 
  /*==========menu footer section end========================*/
@@ -1060,16 +1064,9 @@
      }
 
      .live_stream_tag {
-         gap: 40px;
-         margin-left: 24px;
-         width: 300px;
-     }
+       }
 
-     .live_stream_tag h2 {
-         font-size: 1.5rem;
-         top: 50px;
-     }
-
+     
      .home_menu_title button {
          padding: 7px;
          border-radius: 10px;
@@ -1132,13 +1129,15 @@
      .live_cnt2 h3 {
          bottom: 30px;
          left: 15px;
+         display: block;
          padding: 10px;
          font-size: large;
      }
 
      .live_cnt2 img {
-         width: 150px;
-         height: 150px;
+         width: 100px;
+         padding: 20px;
+         height: 100px;
      }
 
      .live_colons {
@@ -1206,16 +1205,20 @@
          bottom: 0px;
          left: 0px;
      }
+     
+     nav a{
+        font-size: smaller;
+     }
 
      nav {
-         gap: 70px;
+         gap: 20px;
          margin-right: 40px;
 
      }
 
      footer svg {
-         width: 40px;
-         height: 40px;
+         width: 20px;
+         height: 20px;
      }
 
      .navs1 svg {
