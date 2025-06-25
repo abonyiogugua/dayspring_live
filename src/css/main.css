@@ -627,30 +627,7 @@
      text-shadow: 3px 3px 4px black;
  }
 
- #form1 input {
-     box-shadow: 3px 3px 4px black;
-     border-radius: 10px;
-     padding: 5px;
-     width: 400px;
- }
-
- #submit1 {
-     box-shadow: 3px 3px 4px gray;
-     padding: 5px;
-     color: white;
-     border: none;
-     border-radius: 10px;
-     background-color: red;
-     font-size: 2rem;
-     margin-bottom: 30px;
-
-     &:hover {
-         background-color: var(--hover-color);
-         transition: 2s;
-         scale: 1.1;
-     }
- }
-
+ 
  #save_btn {
      box-shadow: 3px 3px 4px gray;
      padding: 5px;
@@ -667,21 +644,10 @@
      }
  }
 
- #profile_page form {
-     border-radius: 30px;
-     padding: 20px;
-     margin-bottom: 100px;
-     text-align: center;
-     border: 2px solid var(--secondary-color);
-     background-color: transparent;
-     backdrop-filter: blur(40px);
-     box-shadow: 3px 3px 4px gray;
- }
-
- .profile-section input {
+  .profile-section input {
      box-shadow: 3px 3px 4px black;
      border-radius: 10px;
-     padding: 5px;
+     padding: 10px;
      width: 400px;
  }
 
