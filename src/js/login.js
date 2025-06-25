@@ -36,7 +36,7 @@
         const user = userCredential.user;
         alert("Login You In")
         //user redirection
-        window.location.href="../signup.html";
+        window.location.href="../main.html";
      })
 .catch((error)=>{
     const errorCode=error.code;
