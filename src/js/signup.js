@@ -36,7 +36,7 @@
         const user = userCredential.user;
         alert("Creating Account....")
         //user redirection
-        window.location.href="../login.html";
+        window.location.href="https://dayspringlive.pages.dev/src/login";
      })
 .catch((error)=>{
     const errorCode=error.code;
