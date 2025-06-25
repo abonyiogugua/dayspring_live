@@ -36,7 +36,7 @@
         const user = userCredential.user;
         alert("Login You In")
         //user redirection
-        window.location.href="https://dayspringlive.pages.dev/src/main";
+        window.location.href="https://dayspringlive.pages.dev/src/home";
      })
 .catch((error)=>{
     const errorCode=error.code;
