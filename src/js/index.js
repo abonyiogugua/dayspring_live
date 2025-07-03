@@ -36,8 +36,12 @@ themeToggleButton.addEventListener('click', () => {
 //nav function section=================//
 const home_section = document.getElementById("home_section");
 const live_stream_section = document.getElementById("live_stream_section");
+const songs_page = document.getElementById("songs_page");
+
+
 
 function home_section1() {
+  songs_page.style.display = "none";
   about_page.style.display = "none";
   contact_page.style.display = "none";
   home_section.style.display = "block";
@@ -50,6 +54,7 @@ function home_section1() {
 }
 
 function live_section1() {
+  songs_page.style.display = "none";
   about_page.style.display = "none";
   contact_page.style.display = "none";
   live_stream_section.style.display = "block";
@@ -69,6 +74,7 @@ const contact_page = document.getElementById("contact_page");
 const commandment_page = document.getElementById("commandment_page");
 
 function commandment_page1() {
+  songs_page.style.display = "none";
   about_page.style.display = "none";
   contact_page.style.display = "none";
   home_section.style.display = "none";
@@ -84,6 +90,7 @@ function settings_page() {
 }
 
 function about_page1() {
+  songs_page.style.display = "none";
   about_page.style.display = "block";
   about_page.classList.add("effect1");
   contact_page.style.display = "none";
@@ -96,6 +103,7 @@ function about_page1() {
 }
 
 function contact_page1() {
+  songs_page.style.display = "none";
   about_page.style.display = "none";
   contact_page.style.display = "block";
   contact_page.classList.add("effect1");
@@ -108,6 +116,7 @@ function contact_page1() {
 }
 
 function live_pg() {
+  songs_page.style.display = "none";
   about_page.style.display = "none";
   contact_page.style.display = "none";
   home_section.style.display = "none";
@@ -120,6 +129,7 @@ function live_pg() {
 }
 
 function contact_pg() {
+  songs_page.style.display = "none";
   about_page.style.display = "none";
   contact_page.style.display = "block";
   contact_page.classList.add("effect1");
@@ -140,6 +150,7 @@ function close_settings1() {
 
 //see all btn=================//
 function see_all() {
+  songs_page.style.display = "none";
   live_stream_section.style.display = "block";
   live_stream_section.classList.add("effect1");
   home_section.style.display = "none";
@@ -159,6 +170,7 @@ const pro_display = document.getElementById('pro_display');
 const profile_page = document.getElementById('profile_page');
 
 function profile_edit1() {
+  songs_page.style.display = "none";
   live_stream_section.style.display = "none";
   home_section.style.display = "none";
   profile_page.style.display = "block";
@@ -179,6 +191,7 @@ const command_igbo = document.getElementById('command_igbo');
 
 
 function command_english1() {
+  songs_page.style.display = "none";
   live_stream_section.style.display = "none";
   home_section.style.display = "none";
   profile_page.style.display = "none";
@@ -190,6 +203,7 @@ function command_english1() {
 }
 
 function command_igbo1() {
+  songs_page.style.display = "none";
   live_stream_section.style.display = "none";
   home_section.style.display = "none";
   profile_page.style.display = "none";
@@ -199,6 +213,24 @@ function command_igbo1() {
   command_igbo.style.display = "block";
   command_igbo.classList.add("effect1");
 }
+
+
+
+
+function songs_page1() {
+  songs_page.style.display = "block";
+  live_stream_section.style.display = "none";
+  home_section.style.display = "none";
+  profile_page.style.display = "none";
+  about_page.style.display = "none";
+  contact_page.style.display = "none";
+  command_english.style.display = "none";
+  command_igbo.style.display = "none";
+  songs_page1.classList.add("effect1");
+}
+
+
+
 
 
 //commandment functions end=================//
@@ -262,4 +294,12 @@ navLinkEls.forEach(navLinkEls => {
 });
 //================== active class end================//
 
- 
+ //================== preloader ================//
+
+var loader=document.querySelector(".loader")
+window.addEventListener("load", vanish);
+function vanish(){
+   loader.classList.add('disapear')
+}
+//================== preloader end================//
+

@@ -22,6 +22,52 @@
  }
 
 
+/*==========prealoder========================*/
+.loader{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color:var(--secondary-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.disapear{
+    animation: vanish 4s forwards;
+}
+@keyframes vanish{
+    100%{opacity: 0;
+    visibility: hidden;
+}
+}
+
+#loader_txt{
+text-align: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+stroke: white;
+font-size: 150px;
+text-shadow: 3px 3px 4px gray;
+font-weight: bold;
+stroke-width: 2;
+animation: textanimate 3s infinite alternate;
+}
+
+@keyframes textanimate{
+    0%{stroke-dasharray:50% 0;
+    stroke-dashoffset: 20%;}
+    100%{stroke-dasharray: 0 50%;
+        stroke-dashoffset: -20%;
+    }
+}
+
+/*==========preloader end========================*/
+
+
 
  #theme-toggle {
      background-color: red;
@@ -326,20 +372,34 @@
  /*==========main banner end========================*/
 
  /*==========sub menu========================*/
- .sub_menu {
+ 
+ .sub_menus1 {
      display: flex;
      justify-content: center;
      align-items: center;
-     gap: 70px;
+     gap: 100px;
      margin-top: 50px;
  }
+  .sub_menus2 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 100px;
+     margin-top: 50px;
+ }
+
 
  .sub_menu svg {
      fill: white;
      width: 60px;
      height: 60px;
      filter: drop-shadow(2px 2px 3px black);
- }
+      &:hover {
+         fill: var(--hover-color);
+         transition: 2s;
+     }
+
+    }
 
  .sub_menu a {
      text-decoration: none;
@@ -347,7 +407,8 @@
      text-shadow: 1px 2px 2px black;
  }
 
- .sub_menu1 {
+ .sub_menu {
+    margin-top: 100px;
      border-radius: 20px;
      background-color: transparent;
      backdrop-filter: blur(40px);
@@ -355,12 +416,6 @@
      border: 2px solid var(--secondary-color);
      text-align: center;
      box-shadow: 3px 3px 4px gray;
-
-     &:hover {
-         background-color: var(--hover-color);
-         transition: 2s;
-         scale: 1.2;
-     }
  }
 
  /*==========sub menu end========================*/
@@ -422,7 +477,6 @@
      &:hover {
          background-color: var(--hover-color);
          transition: 2s;
-         scale: 1.2;
      }
  }
 
@@ -443,33 +497,42 @@
  #live_stream_section {
      display: none;
  }
-
- .live_stream_tag img {
-     width: 200px;
-     height: 200px;
-     filter: drop-shadow(3px 3px 4px white);
-
-     &:hover {
-         animation: rot1 3s linear infinite;
-     }
+.live_stream_titles h2{
+    font-size: x-large;
+    color: red;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bolder;
+}
+ hr{
+    height: 5px;
+    color: red;
+    background-color: red;
  }
-
- .live_stream_tag {
-     margin-top: 30px;
-     text-align: center;
-     justify-content: center;
+ .live_stream_tag img {
+     width: 100px;
+     height: 100px;
+     padding: 30px;
+     filter: drop-shadow(3px 3px 4px white);
      border: 2px solid var(--secondary-color);
      background-color: transparent;
      backdrop-filter: blur(40px);
      box-shadow: 3px 3px 4px gray;
-     margin-bottom: 30px;
-     border-radius: 30px;
-
+     border-radius: 10px;
      &:hover {
          background-color: var(--hover-color);
          transition: 2s;
      }
  }
+
+ .live_stream_tag {
+display: flex;
+margin-top: 30px;
+margin-bottom: 30px;
+gap: 200px;     
+justify-content: center;
+align-items: center;
+}
 
 
  /*==========live section page end========================*/
@@ -482,12 +545,17 @@
      margin-bottom: 100px;
  }
 
+
+.live_stream_tag{
+    display: flex;
+    gap: 200px;
+}
+
  .live_stream_cont1 img {
      border-radius: 10px;
      box-shadow: 3px 3px 4px black;
      width: 500px;
      height: 300px;
-
      &:hover {
          scale: 1.1;
          transition: 2s;
@@ -534,8 +602,8 @@
      display: none;
      left: 80px;
      font-size: 2rem;
-     color: red;
-     text-shadow: 3px 3px 4px black;
+     color: black;
+     font-weight: bolder;
  }
 
  .live_col1 {
@@ -546,7 +614,6 @@
      border-radius: 10px;
 
      &:hover {
-         scale: 1.1;
          transition: 2s;
          background-color: var(--hover-color);
      }
@@ -558,7 +625,6 @@
      border-radius: 10px;
 
      &:hover {
-         scale: 1.1;
          transition: 2s;
          background-color: var(--hover-color);
      }
@@ -572,6 +638,15 @@
 
  /*==========live section page========================*/
 
+
+
+ 
+
+/* =========songs section=============== */
+#songs_page{
+    display: none;
+}
+/* =========songs section end=============== */
 
 
  /*==========profile section page========================*/
@@ -640,7 +715,6 @@
      &:hover {
          background-color: var(--hover-color);
          transition: 2s;
-         scale: 1.1;
      }
  }
 
@@ -867,7 +941,6 @@
 
      &:hover {
          fill: var(--hover-color);
-         scale: 1.2;
          transition: 2s;
      }
  }
@@ -912,7 +985,6 @@
 
      &:hover {
          fill: red;
-         scale: 1.1;
          transition: 2s;
      }
 
@@ -964,8 +1036,16 @@
 
  /* Mobile phones (1 card per row) */
  @media (max-width: 768px) {
-     /*==========background svg ========================*/
 
+
+/*==========prealoder========================*/
+#loader_txt{ 
+   y: 10% ;
+   x: 10%;
+}
+/*==========preloader end========================*/
+
+     /*==========background svg ========================*/
      .home_svg_bg {
          top: 40px;
          left: 1px;
@@ -990,17 +1070,27 @@
 
      /*==========main banner end========================*/
      /*==========sub menu========================*/
-     .sub_menu {
-         gap: 10px;
-     }
+     
 
+.sub_menus1 {
+      gap: 40px;
+       margin-top: 20px;
+ }
+  .sub_menus2 {
+    gap: 40px;
+     margin-top: 20px;
+      margin-bottom: 20px;
+    
+ }
+      
      .sub_menu svg {
-         width: 35px;
-         height: 35px;
+         width: 30px;
+         height: 30px;
      }
 
      .sub_menu a {
-         font-size: large;
+   font-weight: bolder;
+        font-size: small;
      }
 
      .sub_menu1 {
@@ -1025,24 +1115,30 @@
          gap: 50px;
 
      }
-
+.live_stream_titles h2{
+    font-size: large;
+    font-weight: bolder;
+}
      .live_stream_tag img {
-         width: 150px;
-         height: 120px;
+         width: 60px;
+         margin-left: 10px;
+         height: 60px;
          filter: drop-shadow(3px 3px 4px white);
      }
 
-     .live_stream_tag {
-       }
-
-     
+     .live_stream_tag{
+        
+    gap: 70px;
+}
      .home_menu_title button {
          padding: 7px;
          border-radius: 10px;
 
          &:hover {
-             scale: 1.1;
-         }
+        transition: 2s;
+        background-color: var(--hover-color);
+
+        }
      }
 
 
@@ -1097,9 +1193,9 @@
 
      .live_cnt2 h3 {
          bottom: 30px;
-         left: 15px;
+         left: 5px;
          display: block;
-         padding: 10px;
+         padding: 20px;
          font-size: large;
      }
 
