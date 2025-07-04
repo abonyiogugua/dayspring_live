@@ -852,52 +852,152 @@ align-items: center;
  /*==========about section========================*/
  #about_page {
      display: none;
-     text-align: center;
      margin-top: 100px;
- }
+     }
+.about_developer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: transparent;
+     backdrop-filter: blur(40px);
+     box-shadow: 3px 3px 4px gray;
+     border-radius: 20px;
+     border: 2px solid var(--secondary-color);
+}
+.developer_img img{
+width: 250px;
+height: 300px;
+padding: 20px;
+border-radius: 80px;
+border: 2px solid var(--secondary-color);
+box-shadow: 3px 3px 4px gray;
+}
+.developer_name h1{
+    font-size: 2rem;
+    color: red;
+    text-shadow: 1px 1px 2px black;
+}
 
- #about_page h1 {
-     color: red;
-     text-shadow: 3px 3px 4px black;
-     font-size: xx-large;
- }
+#about_title{
+    text-align: center;
+    font-size: 3rem;
+   color: red;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
 
- #about_page p {
-     font-size: larger;
- }
+.about_summarys{
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+     backdrop-filter: blur(40px);
+     box-shadow: 3px 3px 4px gray;
+     border-radius: 20px;
+     border: 2px solid var(--secondary-color);
+     margin-bottom: 100px;
+}
 
- /*==========about section end========================*/
+details{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+summary{
+color: red;
+text-shadow: 1px 1px 2px black;
+    font-size: 2rem;    
+}
+.about_summarys span{
+color: red;
+text-shadow: 1px 1px 2px black;
+    font-size: 1.6rem;    
+}
+.about_summarys p{
+    font-size: larger;
+}
+
+.about_summarys li{
+     list-style: none;
+     margin-top: 10px;
+     margin-bottom: 10px;
+    font-size: larger;
+}
+/*==========about section end========================*/
 
 
  /*==========contact section========================*/
  #contact_page {
-     display: none;
-     text-align: center;
+  margin-top: 100px;
+    display: none;
  }
 
  #contact_page svg {
      width: 40px;
      filter: drop-shadow(3px 3px 4px black);
      height: 40px;
-
      &:hover {
          fill: var(--hover-color);
          transition: 2s;
      }
  }
+.contact_banner{
+    padding: 2px;
+    background-color: transparent;
+     backdrop-filter: blur(40px);
+     box-shadow: 3px 3px 4px gray;
+     border-radius: 30px;
+     border: 2px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
 
- #contact_page h1 {
-     margin-top: 100px;
-     color: red;
-     font-size: x-large;
-     text-shadow: 1px 1px 2px gray;
- }
+.contact_txt h1{
+font-size: 3rem;
+     color: white;
+     -webkit-text-stroke-color: var(--secondary-color);
+     -webkit-text-stroke-width: 2px;
+     font-weight: bold;
+}
 
- #contact_page li {
-     margin-top: 50px;
+.contact_img img{
+    width: 300px;
+    background-color: var(--secondary-color);
+    padding: 5px;
+    height: 300px;
+    filter: drop-shadow(3px 3px 4px black);
+    border-radius: 20px;
+    position: relative;
+    bottom: 100px;
+}
+
+.contact_summary span{
+  color: red;
+  text-shadow: 1px 1px 2px black;
+    font-size: 1.6rem;    
+}
+ .contact_summary p{
+    font-size: larger;
+}
+.contact_summary{
+  margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+     backdrop-filter: blur(40px);
+     box-shadow: 3px 3px 4px gray;
+     border-radius: 20px;
+     border: 2px solid var(--secondary-color);
+     margin-bottom: 100px;
+}
+.contact_summary li{
      list-style: none;
- }
-
+     margin-top: 10px;
+     margin-bottom: 10px;
+    font-size: larger;
+}
 
  /*==========contact section end========================*/
 
@@ -1126,14 +1226,12 @@ align-items: center;
          filter: drop-shadow(3px 3px 4px white);
      }
 
-     .live_stream_tag{
-        
+     .live_stream_tag{       
     gap: 70px;
 }
      .home_menu_title button {
          padding: 7px;
          border-radius: 10px;
-
          &:hover {
         transition: 2s;
         background-color: var(--hover-color);
@@ -1210,6 +1308,118 @@ align-items: center;
      }
 
      /*==========live section page========================*/
+
+
+/*==========about section========================*/
+ #about_page {
+     display: none;
+     margin-top: 100px;
+     }
+.about_developer{
+   
+    gap: 50px;
+    
+}
+.developer_img img{
+width: 80px;
+height: 80px;
+padding: 20px;
+border-radius: 50px;
+}
+.developer_name{
+    padding: 10px;
+}
+.developer_name h1{
+    font-size: 1.2rem;
+    color: red;
+    text-shadow: 1px 1px 2px black;
+}
+.developer_name h2{
+    font-size:large;
+    }
+
+#about_title{
+    text-align: left;
+    font-size: 2rem;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.about_summarys{
+    text-align: left;
+    padding: 10px;
+ margin-bottom: 80px;
+}
+
+details{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+summary{
+    font-size: 1.7rem;    
+}
+.about_summarys span{
+    font-size: 1.2rem;
+    margin-left: 10px;    
+}
+.about_summarys p{
+    margin-left: 10px;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.about_summarys li{
+    margin-left: 10px;
+         font-size: large;
+    font-weight: bolder;
+}
+ /*==========about section end========================*/
+
+ /*==========contact section========================*/
+ #contact_page svg {
+   text-align: center;
+    width: 40px;
+          height: 40px;
+ }
+.contact_banner{
+    gap: 50px;
+}
+
+.contact_txt h1{
+    font-size: 2rem;
+    margin-left: 3px;
+}
+
+.contact_img img{
+    width: 120px;
+    height: 120px;
+    bottom: 40px;
+    right: 20px;
+}
+
+.contact_summary span{
+font-size: 1.2rem;   
+margin-left: 10px;
+}
+ .contact_summary p{
+    margin-left: 10px;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.contact_summary{
+text-align: left;
+    padding: 10px;    
+}
+.contact_summary li{
+font-size: large;
+margin-left: 10px;
+    font-weight: bolder;     
+}
+
+ /*==========contact section end========================*/
+
 
 
      /*==========profile edit section page ========================*/
