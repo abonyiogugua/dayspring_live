@@ -553,21 +553,15 @@ align-items: center;
 
  .live_stream_cont1 img {
      border-radius: 10px;
-     box-shadow: 3px 3px 4px black;
-     width: 500px;
+     box-shadow: 3px 3px 4px gray;
+      background-color: white;
+     padding: 30px;
+     width: 400px;
      height: 300px;
      &:hover {
-         scale: 1.1;
          transition: 2s;
+         background-color: var(--hover-color);
      }
- }
-
- .live_stream_cont1 h3 {
-     position: relative;
-     color: red;
-     text-shadow: 3px 3px 4px black;
-     font-size: 1.3rem;
-     bottom: 80px;
  }
 
  .live_head h1 {
@@ -589,7 +583,6 @@ align-items: center;
  .live_colons {
      margin-bottom: 100px;
      padding: 20px;
-     background-color: var(--secondary-color);
  }
 
  a {
@@ -612,7 +605,6 @@ align-items: center;
      background-color: white;
      box-shadow: 3px 3px 4px gray;
      border-radius: 10px;
-
      &:hover {
          transition: 2s;
          background-color: var(--hover-color);
@@ -662,6 +654,9 @@ align-items: center;
      height: 50px;
      margin-top: 10px;
      display: block;
+ }
+ .displayImage{
+    background-color: red;
  }
 
  .profile-section img {
@@ -741,10 +736,6 @@ align-items: center;
  /*==========profile edit section page end========================*/
 
  /*==========profile section page end========================*/
-
- .active1 {
-     fill: red;
- }
 
  /*==========page effects========================*/
 
@@ -1084,7 +1075,7 @@ font-size: 3rem;
      filter: drop-shadow(3px 3px 4px black);
 
      &:hover {
-         fill: red;
+         fill: var(--hover-color);
          transition: 2s;
      }
 
@@ -1094,7 +1085,7 @@ font-size: 3rem;
  }
 
  .navs1 {
-     background-color: skyblue;
+     background-color: red;
      border-radius: 50px;
      border: 3px solid var(--secondary-color);
      box-shadow: 3px 3px 4px black;
@@ -1230,7 +1221,7 @@ font-size: 3rem;
     gap: 70px;
 }
      .home_menu_title button {
-         padding: 7px;
+         padding: 4px;
          border-radius: 10px;
          &:hover {
         transition: 2s;
@@ -1259,22 +1250,14 @@ font-size: 3rem;
      /*==========live section page end========================*/
      .live_stream_conts {
          gap: 10px;
+         padding: 10px;
          margin-bottom: 10px;
      }
 
      .live_stream_cont1 img {
          margin: 10px;
-         width: 150px;
-         height: 180px;
-     }
-
-     .live_stream_cont1 h3 {
-         position: relative;
-         color: blue;
-         padding: 20px;
-         text-shadow: 1px 1px 2px black;
-         font-size: large;
-         bottom: 200px;
+         width: 100px;
+         height: 130px;
      }
 
      .live_head h1 {
@@ -1286,7 +1269,7 @@ font-size: 3rem;
 
      .live_cnt2 {
          gap: 20px;
-         margin-top: 10px;
+         margin-top: 70px;
      }
 
      .live_cnt2 h3 {

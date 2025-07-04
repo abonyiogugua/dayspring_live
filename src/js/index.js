@@ -276,6 +276,8 @@ function saveProfile() {
       const img = document.getElementById('displayImage');
       img.src = imageDataUrl;
       img.style.display = 'block';
+      alert("Profile picture saved succesfully");
+      
     };
     reader.readAsDataURL(imageFile);
   }
@@ -284,15 +286,6 @@ function saveProfile() {
 
 //profile edit section end=================//
 
-//================== active class================//
-const navLinkEls = document.querySelectorAll(".nav_link");
-navLinkEls.forEach(navLinkEls => {
-  navLinkEls.addEventListener('click', () => {
-    document.querySelector('.active1')?.classList.remove('active1');
-    navLinkEls.classList.add('active1');
-  });
-});
-//================== active class end================//
 
  //================== preloader ================//
 
